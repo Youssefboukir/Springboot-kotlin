@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <Appenders>
+        <Console name="JSONLogger" target="SYSTEM_OUT">
+            <JSONLayout compact="true" eventEol="true" properties="true"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="JSONLogger"/>
+        </Root>
+    </Loggers>
+</Configuration>
